@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintHeight_default="wrap"
+    app:layout_constraintWidth_default="wrap"
+    tools:context=".SosGameActivity">
+
+
+    <Button
+        android:id="@+id/btnO"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:onClick="onButtonOClicked"
+        android:text="O"
+        android:textAlignment="center"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnS"
+        app:layout_constraintTop_toBottomOf="@+id/btn23" />
+
+    <Button
+        android:id="@+id/btnS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:onClick="onButtonSClicked"
+        android:text="S"
+        android:textAlignment="center"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnO"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn24"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn23"
+        app:layout_constraintTop_toBottomOf="@+id/btn19" />
+
+    <Button
+        android:id="@+id/btn23"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn24"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn22" />
+
+    <Button
+        android:id="@+id/btn22"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn23"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn21" />
+
+    <Button
+        android:id="@+id/btn21"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn22"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn20" />
+
+    <Button
+        android:id="@+id/btn20"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn21"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn19"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn18" />
+
+    <Button
+        android:id="@+id/btn18"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn19"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn17" />
+
+    <Button
+        android:id="@+id/btn17"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn18"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn16" />
+
+    <Button
+        android:id="@+id/btn16"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn17"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn15" />
+
+    <Button
+        android:id="@+id/btn15"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn16"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn10" />
+
+    <Button
+        android:id="@+id/btn14"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn13"
+        app:layout_constraintTop_toBottomOf="@+id/btn9" />
+
+    <Button
+        android:id="@+id/btn13"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn12" />
+
+    <Button
+        android:id="@+id/btn12"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn11" />
+
+    <Button
+        android:id="@+id/btn11"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn10"
+        app:layout_constraintTop_toBottomOf="@+id/btn6" />
+
+    <Button
+        android:id="@+id/btn10"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn8" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn7" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn6" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn5" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn0" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn2" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn1" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn0" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textSize="130px"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPlayerOne"
+        android:layout_width="103dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/txtPlayerOne"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPlayerTwo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPlayerTwo"
+        android:layout_width="103dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/txtPlayerTwo"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtScorePlayerOne"
+        android:layout_width="44dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="44dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtScorePlayerTwo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtScorePlayerTwo"
+        android:layout_width="44dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayerTwo" />
+
+    <TextView
+        android:id="@+id/txtWinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:text="@string/txtWinner"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
