@@ -157,9 +157,10 @@ public class SosGameActivity extends AppCompatActivity implements OnClickListene
 
         v.setClickable(false);
         v.setBackgroundResource(R.drawable.my_selected_button_bg);
-        isSOS(0);
+        boolean formedSos = checkForSOS();
         checkGameOver();
-        isPlayerOne = !isPlayerOne;
+        if(!formedSos)
+            isPlayerOne = !isPlayerOne;
 
         if(isPlayerOne){
             txtPlayerOne.setBackgroundColor(Color.parseColor("#2AF7AD"));
@@ -198,29 +199,33 @@ public class SosGameActivity extends AppCompatActivity implements OnClickListene
     }
 
     /**
-     * Method check if S-O-S has been formed anywhere in the grid
-     * @param noSos - Number of times SOS has been formed
-    * */
-    public void isSOS(int noSos){
-        int curNoSos = noSos;
-        for(int[] sosPosition: sosPositions){
-            if(gameState[sosPosition[0]] == gameState[sosPosition[2]] &&
-            gameState[sosPosition[1]] == 1 && gameState[sosPosition[0]] == 0 ){
-                noSos++;
-                updateScore();
-                findAndRemove(sosPosition);
-                highlightSOS(sosPosition);
-                isSOS(noSos);
-                break;
+     * Check the board for any new S-O-S combinations that were created
+     * by the last move.
+     *
+     * @return {@code true} if at least one S-O-S was found, otherwise
+     * {@code false}.
+     */
+    private boolean checkForSOS() {
+        boolean found = false;
+        boolean searchAgain;
 
+        do {
+            searchAgain = false;
+            for (int[] sosPosition : sosPositions) {
+                if (gameState[sosPosition[0]] == gameState[sosPosition[2]] &&
+                        gameState[sosPosition[1]] == 1 &&
+                        gameState[sosPosition[0]] == 0) {
+                    updateScore();
+                    findAndRemove(sosPosition);
+                    highlightSOS(sosPosition);
+                    found = true;
+                    searchAgain = true;
+                    break;
+                }
             }
-        }
-        if(curNoSos == noSos){
-            if(noSos % 2 == 0 && noSos != 0)
-                isPlayerOne = !isPlayerOne;
-            return;
-        }
-        isPlayerOne = !isPlayerOne;
+        } while (searchAgain);
+
+        return found;
     }
 
     /**
